@@ -6,7 +6,9 @@ from PIL import Image
 # =========================
 # LOAD MODEL
 # =========================
-model = tf.keras.models.load_model("dog_cat_cnn_model.keras")
+from tensorflow import keras
+
+model = keras.models.load_model("dog_cat_cnn_model.keras")
 
 # =========================
 # UI
